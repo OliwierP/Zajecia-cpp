@@ -1,0 +1,338 @@
+Programy umieszczamy na swoim githubie w katalogu: kcppZadania
+Zwrócić uwagę na nazwy programów i katalogu
+------------------------------------------------------------------------------------------
+repozytorium: https://github.com/IdentyfikatorUzytkownika/NazwaRepozytorium/kcppZadania
+------------------------------------------------------------------------------------------
+
+
+
+
+
+------------------------------------------------------------------------------------------
+  1. Funkcja main
+------------------------------------------------------------------------------------------
+
+Zadanie 1.1
+--------------------------------------
+Napisać program który zawiera:
+- funkcję main
+- 5 innych funkcji, z czego dwie zadeklarowane jako: extern "C"
+- wywołując program decydujemy, które z funkcji mają zostać wykonane przez podanie tego w liście argumentów przekazanych do funkcji main
+- nazwać program: ZadMainExample.cc 
+
+
+
+
+
+
+------------------------------------------------------------------------------------------
+  2. Zwracanie przez funkcje
+------------------------------------------------------------------------------------------
+
+
+Zadanie 2.1
+--------------------------------------
+Zadanie: Napisać program z czterema funkcjami z których każda zwraca inaczej:
+1. Przez wartość
+2. Przez referencje
+3. Przez wskaźnik
+4. Tablice (proszę się zastanowić o co tak naprawę chodzi)
+- nazwać program: ZadZwracanie.cc
+
+
+
+Zadanie 2.2
+--------------------------------------
+Napisz program przekazujący tablice z zachowaniem rozmiaru
+- nazwać program: ZadPrzekazywanieTablic.cc
+
+
+
+
+
+
+------------------------------------------------------------------------------------------
+   3. Arytmetyka wskaźników
+------------------------------------------------------------------------------------------
+
+ Zadanie 3.1 (LArytmetykaWskaznikowZmienne.cc)
+ -------------------------------------
+ Kierunek adresowania pamięci 
+ - wyjaśnić w komentarzu do programu podającego przykład:
+ - wypisywanie adresów deklarowanych zmiennych
+ - nazwać program: ZadAdresowaniePamieci.cc
+
+
+ Zadanie 3.2 (LArytmetykaWskazikow.cc)
+ -------------------------------------
+ Wyjaśnić i[q] gdy i jest 'int', a q jest wskaźnikiem na tablice
+ - wyjaśnienie  w komentarzu w treści programu!!!!
+ - przykład zastosowania
+ - nazwać program: ZadIq.cc
+
+
+ Zadanie 3.3 (LArytmetykaWskaznikow.cc)
+ -------------------------------------
+ Co robia ponizsze operacje? Napisac program ktory pokazuje ich dzialanie.
+ 1. Funkcja1(): Przy deklaracji zmiennych
+ 2. Funkcja2(): Przy deklaracji tablicy
+ p++;
+ ++p;
+ ++*p;
+ ++(*p);
+ ++*(p);
+ *p++;
+ (*p)++;
+ *(p)++;
+ *++p;
+ *(++p);
+
+ oraz (Funkcja3()) w analogii do LArytmetykaWzkaznikowZmienne.cc aby wypisywal na ekran:
+
+ 1.  A, B, C: 0  0   0
+ 2.  A, B, C: 0  10  0
+ 3.  A, B, C: 0  10  20
+ 4.  A, B, C: 0  30  20
+ 5.  A, B, C: 40 30  20
+ 6.  A, B, C: 40 50  20
+ 7.  A, B, C: 40 50  60
+ 8.  A, B, C: 40 70  60
+ 9.  A, B, C: 80 70  60
+ 10. A, B, C: 80 90  60
+
+ przy poczatkowych zmmiennych: int a = 0, b = 0, c = 0;
+ - nazwać program: ZadArytmetykaWskaznikow.cc
+
+
+Zadanie 3.4 (LArytmetykaWskaznikowTablice.cc)
+--------------------------------------
+ Zaproponuj inne dwa sposoby wyboru wywołania funkcji
+ - nazwać program: ZadWywolanieFunkcji.cc 
+
+
+Zadanie 3.5 (LOperatoryPrzypisania.cc)
+-------------------------------------
+Napisac program z przykladami:
+(1) operatorow arytmetycznych i (2) operatorow przypisania
+(1) i (2) jako osobne funkcje: (1) OperatoryArytmetyczne (2) OperatoryPrzypisania
+- nazwać program: ZadOperatoryPrzypisania.cc
+
+
+
+Zadanie 3.6
+--------------------------------------
+Napisać program z "Priorytety operatorów" (kcpp02::18) - na zajeciach
+- nazwać program: ZadPriorytetyOperatorow.cc
+
+
+Zadanie 3.7
+--------------------------------------
+Napisać program przeliczający
+- liczby binarne na dziesiętne (nazwać: ZadBin2Dec.cc)
+- liczby dziesiętne na binarne (nazwać: ZadDec2Bin.cc)
+
+  Przykłady
+  (github) LPrzeliczanieDec2BinA.cc
+  (github) LPrzeliczanieDec2BinB.cc
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------
+  4. Operacje wejścia/wyjścia 
+------------------------------------------------------------------------------------------
+
+Zadanie 4.0
+--------------------------------------
+Napisz program z przykładami manipulacji strumieniem cout:
+- setw, setprecision, setfill, fixed, scientific, hex, dec... etc (patrz plik kcpp02.pdf)
+- nazwać program LManipulacjaStrumieniemCout.cc
+
+  Spraw aby na ekran wypisało to co jest pomiedzy liniami ze znakami =:
+  ==================================================
+  Wynika naszego działania: x.xxxxx jest niepoprawny ale:
+     output:   xx.xxx    T:  x.xxx 
+     output1:   x.xxxx   T: xx.xxxxx
+     output2:   x.xxxx   T: xx.xxxxxx
+     ---------------------------------
+     average:  xx.xxxx   T: xx.xxxxxx
+  ==================================================
+  - x.xxxx są wynikami jakiś działań, a nie sztucznie wstawionymi liczbami
+  - ustawienie liczb/wypisanie/sformatowanie wykonać używając manipulatorow strumieniem (setw, setprecision, setfill etc), zamiast " "
+
+
+Zadanie 4.1
+--------------------------------------
+Napisz program pokazujący funkcjonalność:
+- wypisywania na ekran,
+- +zapisywanie do strumienie błędów
+- zapisywania do pliku,
+- odczytywania z pliku,
+- nazwać program: ZadCinCoutFile.cc
+
+
+Zadanie 4.2
+--------------------------------------
+Napisz program:
+- pokazujący wykonanie tych samych operacji w c i c++ (kcpp02::34)
+- nazwać program: ZadCandCPP.cc
+
+
+Zadanie 4.3
+--------------------------------------
+Napisz program sprawdzający czy liczba jest parzysta/nieparzysta:
+- trzy funkcje:
+  (a) w jednej sprawdzamy z wykorzystaniem operacji bitowych (&);
+  (b) w drugiej inaczej (eg. modulo)
+  (c) w trzeciej sprawdzenie z użyciem operatora warunkowego zamiast if (lub jako warunek w if: TRUE || FALSE; (... ? 0 : 1))
+  - w kodzie funkcji (a) proszę rozpisać jako komentarz przykładowe sprawdzenie
+- nazwać program: ZadParzysta.cc
+
+
+Zadanie 4.4
+--------------------------------------
+Napisz program z użyciem 'switch' wybierajacy do wykonania jedną z trzech funkcji z zadania ZadParzysta.cc:
+- nazwać program: ZadParzystaCase.cc (kopia ZadParzyste do ZadParzysteCase+switch, lub pominięcie ZadParzyste i umieszczenie wszystkiego w ZadParzystaCase)
+
+
+Zadanie 4.5
+--------------------------------------
+Napisz program pokazujący działanie instrukcji (każda jako osobna funkcja; trzy funkcje od a do c):
+(a) while    (pokazujące while z inkrementacją: i++, ++i)
+(b) do-while (pokazujące do-while z inkrementacją: i++, ++i)
+(c) for
+- wykorzystaj: break, continue, return
+- nazwać program: ZadPetle.cc
+
+
+Zadanie 4.6
+--------------------------------------
+Napisz program wykorzystujący instrukcje 'switch' gdzie:
+- zamiast pojedynczego znaku będzie sprawdzane całe słowo
+- program może być uszczegółowieniem/modyfikacją (zrobić kopie pliku i zmienić kopie) tego co jest w ZadParzysteCase.cc
+- nazwać program: ZadSwitch.cc
+
+
+Zadanie 4.7
+--------------------------------------
+Napisz program pokazujący zstosowanie dyrektywy preprocesora:
+  '#ifdef' (#else)
+  '#ifndef'
+oraz
+  '#define':
+  (a) użycie makra
+  (b) uzycie '#' i '##'
+  (a) i (b) stwórz także dla porównania bez dyrektywy preprocesora
+- nazwać program: ZadPreprocesor.cc
+
+
+
+
+------------------------------------------------------------------------------------------
+  5. Klasy
+------------------------------------------------------------------------------------------
+
+
+Zadanie 5.1
+--------------------------------------
+Napisz prosty program z klasą
+- metody deklarowane i definiowane w klasie
+- metody deklarowane w klasie, a definiowane poza klasą
+- zastosowanie 3 sekcji: public, private, protected
+- zmienne w każdej z sekcji
+- funkcje, które mają dostęp do zmiennych z sekcji protected i private
+- funkcje inline
+- nazwij program: ZadClass.cc
+
+
+Zadanie 5.2
+--------------------------------------
+Stwórz plik z działająca strukturą:
+- deklaracja,
+- definicja obiektów (w dowolny sposób):
+  - wywołanie,
+  - zmiana wartości,
+  - odczyt wartości,
+  // - czy można stworzyć konstruktor (inicjalizacja wartości poczatkowych - standard, lista inicjalizacyjna)
+- nazwij program: ZadStruct.cc
+
+
+Zadanie 5.3
+--------------------------------------
+Pokaż działanie uni (niebezpieczenstwa, bledy)
+- nazwij program: ZadUnia.cc
+
+
+Zadanie 5.4
+--------------------------------------
+Stwórz klase (program: ZadKlasaKonstruktor.cc) oraz structure (program: ZadStructKonstruktor.cc) z przykładami konstruktorów i 
+inicializacją zmiennych:
+- domyślny konstruktor,
+- domyślny destruktor,
+- konstruktor z niepustą liczbą zmiennych argumentów
+- inicjalizacja zmiennych:
+  - 'standardowa',
+  - inicjalizacyjna za pomocą listy inicjalizacyjnej
+
+
+Zadanie 5.5
+--------------------------------------
+Sprawdzić dziłanie przyjaźni klas:
+- Klasa B zaprzyjaźniona z klasą A ma ma dostęp do składników prywatnych
+- Czy klasa A w tym samym momencie może być także zaprzyjaźniona z klasą B?
+    
+Friendship is not mutual. If class A is a friend of B, then B doesn’t become a friend of A automatically.
+https://www.geeksforgeeks.org/friend-class-function-cpp/
+
+
+Zadanie 5.6
+--------------------------------------
+Bazując na pliku LClassMetodyAbstrakcyjne.cc stwórz program który oblicza:
+- obwód, pole powierzchni
+dla:
+- kwadrat, trójkąt, prostokąt, koło (jako klasy dziedziczące po klasie abstrakcyjnej Figura),
+oraz funkcja Dystans (dodatkowo w klasie Koło):
+  Jeśli rząd podaje, że na każdego obywatela w sklepie (kościele etc) przypada X metrów kwadratowych (argument przekazywany do funkcji)
+  to w jakiej odległości (promieniu - to ma funkcja Dystans zwracać) może znaleźć się następna osoba.
+Nazwij program: ZadMetodyAbstrakcyjne.cc 
+
+
+
+
+------------------------------------------------------------------------------------------
+  6. Podsumowanie zadań
+------------------------------------------------------------------------------------------
+
+
+Zadanie 6.1
+--------------------------------------
+- Zaprojektuj klasę/klasy i umieść wszystkie funkcje z zadań z zakresu 1.1-5.6
+  jako metody danej klasy/klas
+- Deklaracja metod w ciele klasy, a definicja poza,
+- Definicje metod w osobnym pliku nagłówkowym
+- nazwij klasę nadrzędną: ZadKcpp (plik: ZadKcpp.cc)
+- używaj dyrektywy preprocesora #define w plikach nagłówkowych
+- wszystko w osobnym katalogu: ZadClassKcpp
+  - main.cc w ZadClassKcpp,
+  - pliki nagłówkowew katalogu: ZadClassKcpp/inlclude,
+  - pliki źródłowe w katalogu: ZadClassKcpp/src
+- Program powinien zawierać interaktywne menu z możliwościa wyboru zadania do wywołania 
+  - menu:
+   - sekcja
+   - numer zadania w sekcji i opis w kilu słowach co dana funkcja (zadanie) zawiera
+
+
+
+
+------------------------------------------------------------------------------------------
+  7. Kompilacja
+------------------------------------------------------------------------------------------
+
+
+Zadanie 7.1
+--------------------------------------
+- Stwórz Makefile (lub uzyj cmake) do kompilacji programu (programów) z zadania 6.1
+

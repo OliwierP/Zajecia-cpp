@@ -1,0 +1,50 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+git config --global user.name "Twoje Imię Nazwisko"
+*******************************************************************************/
+
+#include <iostream>
+
+
+
+int main()
+{
+    int a = 0, b = 0, c = 0;
+    
+    std::cout << "1. "<< "A, B, C: " << a << " "<< b << " " << c << std::endl;
+    
+    int *p;
+    p = &b;
+    *p = 10;
+    
+    std::cout << "2. "<< "A, B, C: " << a << " "<< b << " " << c << std::endl;
+    
+    *(p + 2) = *p + 10;
+    
+    std::cout << "3. "<< "A, B, C: " << a << " "<< b << " " << c << std::endl;
+    
+    *p = *p + *(p + 2);
+    
+    std::cout << "4. "<< "A, B, C: " << a << " "<< b << " " << c << std::endl;
+    
+    *(p + 1) = *p + *(p + 2) - 10;
+    
+    std::cout << "5. "<< "A, B, C: " << a << " "<< b << " " << c << std::endl;
+    
+    *p += *(p + 2);
+    
+    std::cout << "6. "<< "A, B, C: " << a << " "<< b << " " << c << std::endl;
+    
+    *(&b + 2) += *(&b + 1);
+    
+    std::cout << "7. "<< "A, B, C: " << a << " "<< b << " " << c << std::endl;
+    
+    // *(&c - 2) = *(&c) + 10;
+    
+    // std::cout << "8. "<< "A, B, C: " << a << " "<< b << " " << c << std::endl;
+    
+    return 0;
+}
