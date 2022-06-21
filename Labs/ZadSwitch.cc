@@ -6,7 +6,7 @@ using namespace std;
 
 int main() {
     string word;
-    cout << "Podaj dowolne s這wo: ";
+    cout << "Podaj dowolne slowo: ";
     cin >> word;
     switch (word[0]) {
     case 't':
@@ -14,17 +14,17 @@ int main() {
         case 'a':
             switch (word[2]) {
             case 'k':
-                cout << "Podano s這wo: tak" << endl;
+                cout << "Podano slowo: tak" << endl;
                 break;
 
             default:
-                cout << "Podano b喚dne s這wo." << endl;
+                cout << "Podano bledne slowo." << endl;
                 break;
             }
             break;
 
         default:
-            cout << "Podano b喚dne s這wo." << endl;
+            cout << "Podano bledne slowo." << endl;
             break;
         
         }
@@ -35,23 +35,23 @@ int main() {
         case 'i':
             switch (word[2]) {
             case 'e':
-                cout << "Podano s這wo: nie" << endl;
+                cout << "Podano slowo: nie" << endl;
                 break;
 
             default:
-                cout << "Podano b喚dne s這wo." << endl;
+                cout << "Podano bledne slowo." << endl;
                 break;
             }
             break;
 
         default:
-            cout << "Podano b喚dne s這wo." << endl;
+            cout << "Podano bledne slowo." << endl;
             break;
         }
         break;
     
     default:
-        cout << "Podano b喚dne s這wo." << endl;
+        cout << "Podano bledne slowo." << endl;
         break;
     }
 }
