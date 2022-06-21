@@ -9,15 +9,15 @@ union _Union {
 
 int main() {
     _Union d;
-    // Przypisanie wartoúci do a
+    // Przypisanie warto≈ìci do a
     d.a = 1;
     cout << "a: " << d.a << endl;
-    // Odczyt b≥Ídnej wartoúci w przypadku b
+    // Odczyt blednej warto≈ìci w przypadku b
     cout << "b: " << d.b << endl;
-    // Przypisanie wartoúci do b
+    // Przypisanie warto≈ìci do b
     d.b = 2.2;
     cout << "b: " << d.b << endl;
-    // Odczyt b≥Ídnej wartoúci w przypadku a
+    // Odczyt blednej warto≈ìci w przypadku a
     cout << "a: " << d.a << endl;
     return 0;
 }
