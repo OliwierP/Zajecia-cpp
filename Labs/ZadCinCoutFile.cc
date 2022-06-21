@@ -6,7 +6,7 @@ int main(){
 	std::cout << "Podaj liczbe: ";
 	int number;
 	std::cin >> number;
-	fstream fileW("plik.txt", ios::out);
+	std::fstream fileW("plik.txt", std::ios::out);
 
 	if (fileW.good()){
 		std::cout << "Udalo sie otworzyc plik..." << std::endl;
@@ -18,9 +18,9 @@ int main(){
 		std::cerr << "Nie udalo sie otworzyc pliku" << std::endl;
 	}
 	std::cout << std::endl << std::endl << "Odczyt z pliku"<< std::endl;
-	fstream fileR("plik.txt", ios::in);
+	std::fstream fileR("plik.txt", std::ios::in);
 	if (fileR.good()){
-		string line;
+		std::string line;
 		std::cout << "Plik otwarty i zawiera: " << std::endl;
 		while ( !fileR.eof()){
 			getline(fileR, line);

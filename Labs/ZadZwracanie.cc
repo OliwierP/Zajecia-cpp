@@ -5,7 +5,7 @@ int f1(int a, int b) {
 }
 
 int& f2(int a, int b) {
-    c = a + b;
+    int c = a + b;
     return c;
 }
 
