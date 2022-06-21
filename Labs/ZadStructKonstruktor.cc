@@ -15,7 +15,7 @@ struct basicStruct{
     basicStruct(int intA, int intB) : a(intA), b(intB){
     };
     ~basicStruct(){
-        cout << "Destroy basicStruct" << endl;
+        cout << "Destroyed" << endl;
     };
 };
 
