@@ -7,7 +7,7 @@ using namespace std;
 int main(){
 	cout << setw(14) << "C" << setw(25) << "C++" << "\n" << endl;
 
-	cout << setw(35) << "printf(\"bleee!!!\") " << "\t" << "std::cout << bleeee!!! << endl" << endl <<endl;
+	cout << setw(35) << "printf(\"text\") " << "\t" << "std::cout << text << endl" << endl <<endl;
 
 	cout << setw(35) << "printf(\"%i\", 19) " << "\t" << "cout << 19" << endl << endl;
 
@@ -21,4 +21,5 @@ int main(){
 
 	return 1;
 
+	
 }
