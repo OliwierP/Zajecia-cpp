@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class basicClass{
+class bClass{
     private:
         int a;
 
@@ -31,13 +31,13 @@ class basicClass{
 
 };
 
-int basicClass::getA(){
+int bClass::getA(){
     return a;
 }
 
 int main(){
 
-    basicClass bc;
+    bClass bc;
     bc.setA(5);
     bc.setB(2);
     bc.setC(8);
