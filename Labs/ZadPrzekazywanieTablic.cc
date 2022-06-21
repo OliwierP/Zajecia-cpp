@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+
 typedef struct {
     int t[10];
 } table;
