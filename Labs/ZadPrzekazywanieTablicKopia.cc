@@ -1,7 +1,4 @@
 #include <iostream>
-
-
-
 using namespace std;
 
 void fun(int tab[], int size){
@@ -16,7 +13,6 @@ void fun(int tab[], int size){
 	cout << endl;
 	cout << &copyTab << "," << &tab << endl;
 }
-
 
 int main(){
 	int size = 3;
