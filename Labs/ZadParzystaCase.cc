@@ -25,9 +25,6 @@ result;
 }
 
 
-
-
-
 int main() {
     int f, a;
     cout << "Wybierz funkcje (1 - operacje bitowe, 2 - modulo, 3 - operator warunkowy): ";
