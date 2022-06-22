@@ -14,8 +14,6 @@ class Figura
 //------------------------------------------------------------------
 
 
-
-
 //------------------------------------------------------------------
 class Trojkat : public Figura 
 {  
@@ -58,8 +56,6 @@ class Kwadrat
 
 
 
-
-
 //--------------------------------------------------------
 //------------------------------------------------------------------
 class Prostokat : public Figura 
@@ -96,6 +92,4 @@ int main()
 	Prostokat *objProstokat = new Prostokat();
    objProstokat->Narysuj();
    objProstokat->Pole(3, 5);
-
-
 }
